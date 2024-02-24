@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "vite": "^5.0.10"
+  },
+  "devDependencies": {
+    "sass": "^1.69.5",
+    "vite-plugin-qrcode": "^0.2.3"
+  },
+  "scripts": {
+    "dev": "vite"
+  }
+}

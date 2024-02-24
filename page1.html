@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 1</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body id="chapter-1">
+    <script src="./js/components/navButton.js"></script>
+    <script src="./js/components/audioButton.js"></script>
+    
+    <nav-button direction="next" href="./page2.html"></nav-button>
+    <nav-button direction="back" href="./index.html"></nav-button>
+    <audio-button src="assets/audio/capitulo1.mp3"></audio-button>
+
+    <div class="container">
+        <h1 class="tale">Caperucita va a visitar a su abuelita y le lleva una cesta con pan, queso y miel.</h1>
+        <button id="ver-comida" onclick=accion(comida)><h1 class="interaction">VER LA COMIDA</h1></button>
+    </div>
+
+    <div id="pan" class="ocultar comida">
+        <img src="./assets/pan.png">
+        <div class="ocultar comida-descripcion">PAN</div>
+    </div>
+    <div id="queso" class="ocultar comida">
+        <img src="./assets/queso.png">
+        <div class="ocultar comida-descripcion">QUESO</div>
+    </div>
+    <div id="miel" class="ocultar comida">
+        <img src="./assets/miel.png">
+        <div class="ocultar comida-descripcion">MIEL</div>
+    </div>
+    
+    <script src="js/mostrar.js"></script>
+    
+    <footer>Imágenes <a href="http://www.freepik.com">Designed by Freepik</a></footer>
+</body>
+</html>

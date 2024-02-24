@@ -1,0 +1,171 @@
+@use "../styles/fonts";
+@use "../styles/colors";
+@use "../styles/layouts";
+
+body{
+    background-color: colors.$main-color;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.top-margin{
+    margin-top: 20%;
+}
+
+#index{
+    background-image: url("./assets/titleBackground-laptop.jpg");
+}
+
+@for $i from 1 through 5{
+    #chapter-#{$i}{
+        background-image: url('./assets/capitulo#{$i}-laptop.jpg');
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #index{
+        background-image: url("./assets/titleBackground.jpg");
+    }
+    @for $i from 1 through 5{
+        #chapter-#{$i}{
+            background-image: url('./assets/capitulo#{$i}.jpg');
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .top-margin{
+        margin-top: 35%;
+    }
+
+    #index{
+        background-image: url("./assets/titleBackground-phone.jpg");
+    }
+    
+    @for $i from 1 through 5{
+        #chapter-#{$i}{
+            background-image: url('./assets/capitulo#{$i}-phone.jpg');
+        }
+    }
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin: layouts.$text-div-margin;
+    width: 95%;
+    text-align: justify;
+}
+
+.title-div{
+    background-image: url("./assets/frameTitle.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 20px;
+    padding: 30px; 
+}
+
+footer{
+    position: absolute;
+    bottom: 5px;
+}
+
+img{
+    width: 20%;
+}
+
+#pan{
+    position: absolute;
+    left: 20%;
+    top:35%;
+}
+
+#queso{
+    position: absolute;
+    left: 10%;
+    top:45%;
+}
+
+#miel{
+    position: absolute;
+    left: 25%;
+    top:55%;
+}
+
+.comida-descripcion{
+    background-color: white;
+    display: inline-block;
+}
+
+.ocultar{
+    display: none;
+}
+
+#interaccion2{
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    left:50px;
+    bottom: 100px;
+    text-align: right;
+}
+@media screen and (max-width: 600px) {
+    #interaccion2{
+        position: absolute;
+        width: 500px;
+        height: 350px;
+        left:50px;
+        bottom: 100px;
+        text-align: left;
+    }
+}
+
+.bocadillo{
+    height:50%;
+    width: 50%;
+}
+
+.flor{
+    width: 120px;
+    margin:10px;
+}
+
+#interaccion3{
+    position: absolute;
+    left: 10%;
+    top: 45%;
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#image-container {
+    position: relative;
+    width: 100%;
+    height: auto; 
+}
+  
+#moving-image {
+    position: absolute;
+    width: 10%;
+    height: auto; 
+    max-width: 200px;
+    transition: transform 0.1s ease; 
+}
+
+@media screen and (max-width: 600px) {
+    #moving-image {
+        position: absolute;
+        width: 20%;
+        height: auto; 
+        max-width: 200px;
+        transition: transform 0.1s ease; 
+    }
+}

@@ -1,0 +1,340 @@
+body {
+  background-color: #69b725;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.top-margin {
+  margin-top: 20%;
+}
+
+#index {
+  background-image: url("./assets/titleBackground-laptop.jpg");
+}
+
+#chapter-1 {
+  background-image: url("./assets/capitulo1-laptop.jpg");
+}
+
+#chapter-2 {
+  background-image: url("./assets/capitulo2-laptop.jpg");
+}
+
+#chapter-3 {
+  background-image: url("./assets/capitulo3-laptop.jpg");
+}
+
+#chapter-4 {
+  background-image: url("./assets/capitulo4-laptop.jpg");
+}
+
+#chapter-5 {
+  background-image: url("./assets/capitulo5-laptop.jpg");
+}
+
+@media screen and (max-width: 1200px) {
+  #index {
+    background-image: url("./assets/titleBackground.jpg");
+  }
+  #chapter-1 {
+    background-image: url("./assets/capitulo1.jpg");
+  }
+  #chapter-2 {
+    background-image: url("./assets/capitulo2.jpg");
+  }
+  #chapter-3 {
+    background-image: url("./assets/capitulo3.jpg");
+  }
+  #chapter-4 {
+    background-image: url("./assets/capitulo4.jpg");
+  }
+  #chapter-5 {
+    background-image: url("./assets/capitulo5.jpg");
+  }
+}
+@media screen and (max-width: 600px) {
+  .top-margin {
+    margin-top: 35%;
+  }
+  #index {
+    background-image: url("./assets/titleBackground-phone.jpg");
+  }
+  #chapter-1 {
+    background-image: url("./assets/capitulo1-phone.jpg");
+  }
+  #chapter-2 {
+    background-image: url("./assets/capitulo2-phone.jpg");
+  }
+  #chapter-3 {
+    background-image: url("./assets/capitulo3-phone.jpg");
+  }
+  #chapter-4 {
+    background-image: url("./assets/capitulo4-phone.jpg");
+  }
+  #chapter-5 {
+    background-image: url("./assets/capitulo5-phone.jpg");
+  }
+}
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin: 20px auto;
+  width: 95%;
+  text-align: justify;
+}
+
+.title-div {
+  background-image: url("./assets/frameTitle.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+footer {
+  position: absolute;
+  bottom: 5px;
+}
+
+img {
+  width: 20%;
+}
+
+#pan {
+  position: absolute;
+  left: 20%;
+  top: 35%;
+}
+
+#queso {
+  position: absolute;
+  left: 10%;
+  top: 45%;
+}
+
+#miel {
+  position: absolute;
+  left: 25%;
+  top: 55%;
+}
+
+.comida-descripcion {
+  background-color: white;
+  display: inline-block;
+}
+
+.ocultar {
+  display: none;
+}
+
+#interaccion2 {
+  position: absolute;
+  width: 500px;
+  height: 350px;
+  left: 50px;
+  bottom: 100px;
+  text-align: right;
+}
+
+@media screen and (max-width: 600px) {
+  #interaccion2 {
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    left: 50px;
+    bottom: 100px;
+    text-align: left;
+  }
+}
+.bocadillo {
+  height: 50%;
+  width: 50%;
+}
+
+.flor {
+  width: 120px;
+  margin: 10px;
+}
+
+#interaccion3 {
+  position: absolute;
+  left: 10%;
+  top: 45%;
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#image-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+#moving-image {
+  position: absolute;
+  width: 10%;
+  height: auto;
+  max-width: 200px;
+  transition: transform 0.1s ease;
+}
+
+@media screen and (max-width: 600px) {
+  #moving-image {
+    position: absolute;
+    width: 20%;
+    height: auto;
+    max-width: 200px;
+    transition: transform 0.1s ease;
+  }
+}
+* {
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h1 {
+  margin: 20px auto;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+.title {
+  color: rgb(240, 43, 63);
+  font-size: 4em;
+  text-shadow: 1px 1px 2px black;
+}
+
+.subtitle {
+  color: rgb(255, 255, 255);
+  font-size: 2.5em;
+  text-shadow: 1px 1px 2px black;
+}
+
+.tale {
+  font-size: 1.8em;
+  text-shadow: 1px 1px 2px white;
+}
+
+.interaction {
+  font-size: 1.8em;
+  color: rgb(255, 0, 200);
+  text-shadow: 1px 1px 2px white;
+}
+
+.start-button {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-size: 2.5em;
+  letter-spacing: 0.15rem;
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 2.8em;
+  }
+  .subtitle {
+    font-size: 1.75em;
+  }
+  .tale {
+    font-size: 0.9em;
+  }
+  .interaction {
+    font-size: 1.26em;
+  }
+}
+.button {
+  display: inline-block;
+  padding: 20px;
+  border-radius: 10rem;
+  background-color: #0cf;
+  color: rgb(255, 255, 255);
+}
+
+.start-button {
+  top: 50%;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.start-button:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+.start-button:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #008fb3;
+  transition: all 0.3s;
+  z-index: -1;
+}
+.start-button:hover:before {
+  width: 100%;
+}
+
+.credits {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+.credits:hover {
+  background-color: #008fb3;
+}
+
+.nav-img {
+  width: 10px;
+}
+
+.flor:hover {
+  animation-name: animacionImagen;
+  animation-duration: 1s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.flor:active {
+  animation-name: animacionImagen;
+  animation-duration: 1s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes animacionImagen {
+  from {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2) rotate(10deg);
+  }
+  50% {
+    transform: scale(1);
+  }
+  85% {
+    transform: scale(0.8) rotate(-10deg);
+  }
+  to {
+    transform: scale(1);
+  }
+}

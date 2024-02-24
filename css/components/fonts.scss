@@ -1,0 +1,60 @@
+@use "../styles/colors";
+@use "../styles/fonts";
+@use "../styles/layouts";
+
+*{
+    text-decoration: none;
+    font-family: fonts.$main-font-family;
+}
+
+h1{
+    margin: layouts.$text-div-margin;
+}
+p{
+    font-size: fonts.$main-font-size;
+}
+
+.title{
+    color: colors.$title-color;   
+    font-size: fonts.$title-font-size; 
+    text-shadow: fonts.$main-shadow;
+}
+.subtitle{
+    color: colors.$subtitle-color;
+    font-size: fonts.$subtitle-font-size;
+    text-shadow: fonts.$main-shadow;
+}
+
+.tale{
+    font-size: fonts.$tale-font-size;
+    text-shadow: fonts.$tale-shadow;
+}
+
+.interaction{
+    font-size: fonts.$tale-font-size;
+    color: colors.$interaction-color;
+    text-shadow: fonts.$tale-shadow;
+}
+
+.start-button{
+    color: colors.$subtitle-color;
+	text-transform: uppercase;
+	font-size: fonts.$subtitle-font-size;
+	letter-spacing: .15rem;
+}
+
+@media screen and (max-width: 600px) {
+    .title{
+        font-size: fonts.$title-font-size*0.7;    
+    }
+    .subtitle{
+        font-size: fonts.$subtitle-font-size*0.7;
+    }  
+    .tale{
+        font-size: fonts.$tale-font-size*0.5;
+    }
+
+    .interaction{
+        font-size: fonts.$tale-font-size*0.7;
+    }
+}

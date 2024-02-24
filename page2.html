@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 2</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body id="chapter-2">
+    <script src="./js/components/navButton.js"></script>
+    <script src="./js/components/audioButton.js"></script>
+
+    <nav-button direction="next" href="./page3.html"></nav-button>
+    <nav-button direction="back" href="./page1.html"></nav-button>
+    <audio-button src="assets/audio/capitulo2.mp3"></audio-button>
+
+    <div class="container">
+        <h1 class="tale">Andando por el bosque, Caperucita se encuentra al lobo.</h1>
+        <h1 class="tale">¿A dónde vas caperucita? - dijo el lobo.</h1>
+        <h1 class="tale">A casa de mi abuelita a llevarle comida - contestó.</h1>
+        <h1 class="tale">Si tomas este camino llegarás antes - le aconsejó el lobo.</h1>
+        <h1 class="interaction">Pasa el ratón por el lobo para ver qué piensa.</h1>
+    </div>
+    <div id="interaccion2" onmouseover=accion(pensamiento) onmouseout=accion(pensamiento)><img class="bocadillo ocultar" src="./assets/bocadillo.png"></div>
+    <script src="js/mostrar.js"></script>
+    
+    <footer>Imágenes <a href="http://www.freepik.com">Designed by Freepik</a></footer>
+</body>
+</html>
